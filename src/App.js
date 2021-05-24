@@ -4,7 +4,7 @@ import './App.css';
 import LogRocket from 'logrocket';
 LogRocket.init('5i2sox/chat-app');
 
-const projectID = 'f52a57ed-a401-422d-905c-07a1846e63af';
+const projectID = '7ce35b9e-9e14-4bf7-b4e1-b8baf48b659f';
 const App = () => {
   if (!localStorage.getItem('username')) return <LoginForm />;
 
