@@ -7,7 +7,7 @@
 }
 
 .ce-chat-list {
-  background-color: rgb(255, 0, 255) !important;
+  background-color: rgb(0, 0, 255) !important;
 }
 
 .ce-chats-container {
@@ -16,7 +16,7 @@
 }
 
 .ce-active-chat-card {
-  background-color: rgba(255,0,255,1)  !important;
+  background-color: rgba(212,0,255,1)  !important;
   border: 4px solid rgba(0,0,255,1)  !important;
   border-right: 5px solid #0000FF;
   border-radius: 0% !important;
@@ -90,13 +90,13 @@
 }
 
 .chat-title {
-  color: #0000ff;
+  color: #ffffff;
   font-weight: 800;
   font-size: 24px;
 }
 
 .chat-subtitle {
-  color: #0000ff;
+  color: #000000;
   font-weight: 600;
   font-size: 12px;
   padding-top: 4px;
