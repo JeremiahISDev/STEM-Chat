@@ -106,6 +106,7 @@
 .message-block {
   width: 100%;
   display: inline-block;
+	background: #00CCFF; background: -webkit-linear-gradient(bottom right, #00CCFF, #0000FF); background: -moz-linear-gradient(bottom right, #00CCFF, #0000FF); background: linear-gradient(to top left, #00CCFF, #0000FF);
 }
 
 .message-avatar {
