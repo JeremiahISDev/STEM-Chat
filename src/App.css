@@ -158,7 +158,10 @@
   bottom: 0px;
   width: calc(100% - 36px);
   padding: 18px;
-  background-color: rgb(240, 240, 240);
+  background-color: background: #00CCFF;
+background: -webkit-linear-gradient(bottom right, #00CCFF, #0000FF);
+background: -moz-linear-gradient(bottom right, #00CCFF, #0000FF);
+background: linear-gradient(to top left, #00CCFF, #0000FF);;
 }
 
 .message-form {
