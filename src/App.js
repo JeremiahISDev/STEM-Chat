@@ -15,7 +15,11 @@ const App = () => {
       userName={localStorage.getItem('username')}
       userSecret={localStorage.getItem('password')}
       onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()
-	  }
+      }
+      onNewMessage={(message) => fetch('https://events.sendpulse.com/events/id/e323256cfeb643398a9d06b613f2b1ce/7873933', {
+        method: 'POST',
+        body: JSON.stringify(message)
+      }).then(response => response.json()).then(console.log)}
     />
   );
 };
