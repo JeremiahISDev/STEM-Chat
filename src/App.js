@@ -17,8 +17,9 @@ const App = () => {
       onNewMessage={(data, message) => fetch('https://events.sendpulse.com/events/id/e323256cfeb643398a9d06b613f2b1ce/7873933', {
         method: 'POST',
         body: JSON.stringify({
-          "email": '',
-          "phone": '',
+          "email": 'jr.isamuel08@gmail.com',
+          "phone": '7327886322',
+          "sender": data.sender_username,
           "message": message
         })
       }).then(response => response.json()).then(console.log).then(new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play())
