@@ -8,6 +8,8 @@ const projectID = '889e8a88-ce27-4629-8051-3f85c29181e1';
 const App = () => {
   if (!localStorage.getItem('username')) return <LoginForm />;
 
+
+
   return (
     <ChatEngine
       height="100vh"
@@ -17,8 +19,8 @@ const App = () => {
       onNewMessage={(data, message) => fetch('https://events.sendpulse.com/events/id/e323256cfeb643398a9d06b613f2b1ce/7873933', {
         method: 'POST',
         body: JSON.stringify({
-          "email": '',
-          "phone": '',
+          "email": 'jr.isamuel08@gmail.com' ,
+          "phone": '7327886322',
           "sender": message.sender_username,
           "message": message.text,
         })
