@@ -12,7 +12,15 @@
     <meta name="application-name" content="STEM Club Chat App">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#0000ff">
-<script charset="UTF-8" src="//web.webpushs.com/js/push/aa36d4f49aa7f7393bce974b94129221_1.js" async defer></script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "f39b7a81-3c4b-4d83-8e3b-ccc08b487c53",
+    });
+  });
+</script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
