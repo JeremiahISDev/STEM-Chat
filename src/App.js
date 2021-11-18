@@ -16,23 +16,25 @@ const App = () => {
 			let permission = Notification.requestPermission();
 			granted = permission === 'granted' ? true : false;
 		}
-  if (granted) {
-		// create a new notification
-		const notification = new Notification('New Message', {
-			body: `${message} Click To view More or Reply`,
-			icon: 'https://stem-club-chat.netlify.app/favicon.ico'
-		});
-		// close the notification after 10 seconds
-		setTimeout(() => {
-			notification.close();
-		}, 10 * 1000);
+    if (granted) {
+      if (localStorage.getItem('username') !== message.sender_username) {
+        // create a new notification
+        const notification = new Notification('New Message', {
+          body: `${message.text} Click To view More or Reply`,
+          icon: 'https://stem-club-chat.netlify.app/favicon.ico'
+        });
+        // close the notification after 10 seconds
+        setTimeout(() => {
+          notification.close();
+        }, 10 * 1000);
 
-		// navigate to a URL when clicked
-		notification.addEventListener('click', () => {
+        // navigate to a URL when clicked
+        notification.addEventListener('click', () => {
 
-			window.open('https://stem-club-chat.netlify.app/', '_blank');
-		});
-	}
+          window.open('https://stem-club-chat.netlify.app/', '_blank');
+        });
+      }
+    }
 }
 
   return (
@@ -41,7 +43,7 @@ const App = () => {
       projectID={projectID}
       userName={localStorage.getItem('username')}
       userSecret={localStorage.getItem('password')}
-      onNewMessage={(message) => showNotification(message.text).then(console.log).then(new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play())
+      onNewMessage={(data, message) => showNotification(JSON.stringify(message)).then(console.log).then(new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play())
       }
     />
     
