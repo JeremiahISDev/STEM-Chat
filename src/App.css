@@ -76,7 +76,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#00ddff",GradientType=1);
 }
 
-.ce-message-bubble{
+.ce-message-bubble .ce-their-message-bubble{
   background: rgb(172,172,172);
   background: -moz-linear-gradient(245deg, rgba(172,172,172,1) 0%, rgba(255,255,255,1) 100%);
   background: -webkit-linear-gradient(245deg, rgba(172,172,172,1) 0%, rgba(255,255,255,1) 100%);
