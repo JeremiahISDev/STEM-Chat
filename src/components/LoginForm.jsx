@@ -39,7 +39,7 @@ const Modal = () => {
             </button>
           </div>
         </form>
-        <center><h1 style={{paddingTop: 10}}>{error}</h1></center>
+        <center><h1 style={{paddingTop: 10, color: 'red'}}>{error}</h1></center>
       </div>
     </div>
 
