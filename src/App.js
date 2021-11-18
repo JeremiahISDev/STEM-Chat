@@ -17,10 +17,9 @@ const App = () => {
 			granted = permission === 'granted' ? true : false;
 		}
     if (granted) {
-      if (localStorage.getItem('username') !== message.sender_username) {
         // create a new notification
         const notification = new Notification('New Message', {
-          body: `${message.text} Click To view More or Reply`,
+          body: `Click To View More or Reply`,
           icon: 'https://stem-club-chat.netlify.app/favicon.ico'
         });
         // close the notification after 10 seconds
@@ -34,7 +33,6 @@ const App = () => {
           window.open('https://stem-club-chat.netlify.app/', '_blank');
         });
       }
-    }
 }
 
   return (
