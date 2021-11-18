@@ -14,7 +14,7 @@ const App = () => {
       projectID={projectID}
       userName={localStorage.getItem('username')}
       userSecret={localStorage.getItem('password')}
-      onNewMessage={(data, message) => fetch('https://events.sendpulse.com/events/name/new_message', {
+      onNewMessage={(data, message) => fetch('https://events.sendpulse.com/events/id/e323256cfeb643398a9d06b613f2b1ce/7873933', {
         method: 'POST',
         body: JSON.stringify({
           "email": '',
