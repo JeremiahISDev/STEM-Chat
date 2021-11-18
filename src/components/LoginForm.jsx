@@ -35,11 +35,11 @@ const Modal = () => {
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
           <div align="center">
             <button type="submit" className="button">
-              <span>Start chatting</span>
+             <span>💬</span><span>Start chatting</span>
             </button>
           </div>
         </form>
-        <h1>{error}</h1>
+        <center><h1 style={{paddingTop: 10}}>{error}</h1></center>
       </div>
     </div>
 
