@@ -22,7 +22,7 @@ const Modal = () => {
       window.location.reload();
       setError('');
     } catch (err) {
-      setError('Oops, incorrect credentials.');
+      setError('The username or password you entered is incorrect.');
     }
   };
 
