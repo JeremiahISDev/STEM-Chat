@@ -13,7 +13,7 @@ const App = () => {
 		if (Notification.permission === 'granted') {
 			granted = true;
 		} else if (Notification.permission !== 'denied') {
-			let permission = await Notification.requestPermission();
+			let permission = Notification.requestPermission();
 			granted = permission === 'granted' ? true : false;
 		}
   if (granted) {
