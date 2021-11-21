@@ -1,6 +1,6 @@
 import { ChatEngine } from 'react-chat-engine';
 import LoginForm from './components/LoginForm';
-import './AppDark.css';
+import './App.css';
 import LogRocket from 'logrocket';
 LogRocket.init('5i2sox/chat-app');
 
